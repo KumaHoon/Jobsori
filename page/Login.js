@@ -8,7 +8,7 @@ function Login({navigation}) {
       <LoginScreen
         logoImageSource={require('../assets/bank.png')}
         onLoginPress={() => {
-          navigation.navigate('Profile');
+          navigation.navigate('MainLanding');
         }}
         onSignupPress={() => {}}
         onEmailChange={(email: string) => {}}

@@ -4,7 +4,7 @@ import {View, Text, Button} from 'react-native';
 function Home({navigation}) {
   return (
     <View>
-      <Text>Home!</Text>
+      <Text>홈 화면</Text>
       <Button
         title="Go to Login"
         onPress={() => navigation.navigate('Login')}

@@ -1,19 +1,19 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-function Profile({navigation}) {
+function ContentLanding({navigation}) {
   return (
     <View style={styles.container}>
-      <Text> 프로필 페이지임.</Text>
+      <Text> 컨텐츠(강의) 페이지 </Text>
       <Button
-        title="메인 화면으로"
+        title="메인 페이지로"
         onPress={() => navigation.navigate('MainLanding')}
       />
     </View>
   );
 }
 
-export default Profile;
+export default ContentLanding;
 
 const styles = StyleSheet.create({
   container: {

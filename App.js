@@ -7,18 +7,30 @@
  */
 
 import React, {Component} from 'react';
-import {StyleSheet, Text, Image, View, Button} from 'react-native';
-import Login from './page/login';
+import {StyleSheet} from 'react-native';
+import Home from './page/Home';
+import Login from './page/Login';
+import Profile from './page/Profile';
+import 'react-native-gesture-handler';
+import {createStackNavigator} from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+
+const Stack = createStackNavigator();
 
 class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Login />
-      </View>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName="Home">
+          <Stack.Screen name="Home" component={Home} />
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="Profile" component={Profile} />
+        </Stack.Navigator>
+      </NavigationContainer>
     );
   }
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

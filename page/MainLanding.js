@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
+
 function MainLanding({navigation}) {
   return (
     <View style={styles.container}>
@@ -21,11 +22,11 @@ function MainLanding({navigation}) {
           title="프로필 화면으로"
           onPress={() => navigation.navigate('Profile')}
         />
-          <Button
+        <Button
           style={styles.footerBtn}
           title="채팅 페이지"
           onPress={() => navigation.navigate('Chatting')}
-      />
+        />
       </View>
     </View>
   );

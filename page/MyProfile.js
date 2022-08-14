@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 
-function Profile({navigation}) {
+function MyProfile({navigation}) {
   return (
     <View style={styles.container}>
       <Text> 프로필 페이지임.</Text>
@@ -13,7 +13,7 @@ function Profile({navigation}) {
   );
 }
 
-export default Profile;
+export default MyProfile;
 
 const styles = StyleSheet.create({
   container: {
